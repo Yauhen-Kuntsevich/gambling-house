@@ -112,3 +112,19 @@ svg * {
   }
 }
 /*Styles normalization end*/
+
+:root {
+  --color-dark: #110a1d;
+  --color-light: #fff;
+  --color-blue: #478bf9;
+  --color-light-blue: #9dadf2;
+
+  --border-radius: 24px;
+  --border: 2px solid var(--color-light-blue);
+
+  --font-family-base: "Lexend", sans-serif;
+
+  --container-width: 1640px;
+
+  --transition-duration: 0.2s;
+}
