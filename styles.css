@@ -306,16 +306,42 @@ h6 {
   line-height: 40px;
 }
 
-.blog-container {
+.blog-wrapper {
   width: 530px;
   height: 595px;
   border: 3px solid var(--color-blue);
   border-radius: 100px;
   background-color: rgba(255 255 255 / 12%);
+  overflow: hidden;
+  padding-right: 16px;
+}
+
+.blog-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   padding-top: 24px;
   padding-left: 24px;
-  padding-right: 40px;
-  overflow-y: auto;
+  padding-right: 16px;
+}
+
+.blog-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.blog-container::-webkit-scrollbar-track {
+  background-color: rgba(255 255 255 / 12%);
+  border-radius: 10px;
+  margin-block: 95px;
+}
+
+.blog-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-blue);
+  border-radius: 10px;
+}
+
+.blog-container::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-blue);
 }
 
 .blog-post-card {
