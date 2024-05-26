@@ -118,6 +118,7 @@ svg * {
   --color-light: #fff;
   --color-blue: #478bf9;
   --color-light-blue: #9dadf2;
+  --color-dark-blue: #1e1231;
 
   --border-radius: 24px;
 
@@ -249,12 +250,19 @@ h6 {
   width: 670px;
 }
 
+.hero-banner-header {
+  margin-bottom: 24px;
+}
+
 .hero-banner-head {
   font-size: 96px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 96px;
-  margin-bottom: 24px;
+}
+
+.blue-text {
+  color: var(--color-blue);
 }
 
 .hero-banner-subheader {
@@ -280,16 +288,53 @@ h6 {
   text-transform: uppercase;
 }
 
-.blue-text {
-  color: var(--color-blue);
+.blog-header {
+  margin: 24px;
 }
 
-.blog {
+.blog-head {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+}
+
+.blog-container {
   width: 530px;
-  padding: 24px;
+  height: 595px;
+  border: 3px solid var(--color-blue);
+  border-radius: 100px;
+  background-color: rgba(255 255 255 / 12%);
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 40px;
+  overflow-y: auto;
 }
 
 .blog-post-card {
   text-wrap: wrap;
   width: 100%;
+}
+
+.blog-post-card {
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 64px;
+  background-color: var(--color-dark-blue);
+  border-radius: 196px;
+  margin-bottom: 16px;
+}
+
+.blog-post-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.blog-post-date {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 60%;
 }
