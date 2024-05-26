@@ -130,7 +130,6 @@ svg * {
 
 body {
   font-family: var(--font-family-base);
-  line-height: 1;
   background-color: var(--color-dark);
 }
 
@@ -233,17 +232,56 @@ h6 {
 
 .main {
   display: flex;
-  width: 100%;
-  height: 100vh;
+  justify-content: center;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: var(--container-width);
 }
 
 .hero-banner {
-  height: 670px;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 670px;
 }
 
-.hero-banner-header {
+.hero-banner-head {
   font-size: 96px;
   font-weight: 500;
+  text-transform: uppercase;
+  line-height: 96px;
+  margin-bottom: 24px;
+}
+
+.hero-banner-subheader {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-light);
+  opacity: 60%;
+  line-height: 32px;
+  margin-bottom: 48px;
+}
+
+.hero-banner-partner-button {
+  padding: 20px 72px;
+  border-radius: 48px;
+}
+
+.partner-button-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-light);
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blue-text {
+  color: var(--color-blue);
 }
 
 .blog {
@@ -251,5 +289,7 @@ h6 {
   padding: 24px;
 }
 
-/* .blog-post-card {
-} */
+.blog-post-card {
+  text-wrap: wrap;
+  width: 100%;
+}
