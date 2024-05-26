@@ -288,6 +288,12 @@ h6 {
   text-transform: uppercase;
 }
 
+.blog {
+  position: absolute;
+  top: 140px;
+  right: 0;
+}
+
 .blog-header {
   margin: 24px;
 }
