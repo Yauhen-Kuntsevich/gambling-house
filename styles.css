@@ -92,7 +92,7 @@ body {
   line-height: 1.5;
 }
 
-svg *[fill] {
+/* svg *[fill] {
   fill: currentColor;
 }
 svg *[stroke] {
@@ -101,7 +101,7 @@ svg *[stroke] {
 
 svg * {
   transition-property: fill, stroke;
-}
+} */
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -434,4 +434,12 @@ h6 {
 .social-media-icon {
   width: 32px;
   height: 32px;
+}
+
+.social-media-icon .main-fill {
+  fill: var(--color-blue);
+}
+
+.social-media-icon:hover .main-fill {
+  fill: url(#gradient);
 }
