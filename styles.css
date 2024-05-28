@@ -303,6 +303,51 @@ h6 {
   text-transform: uppercase;
 }
 
+.chips-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  width: 330px;
+  height: 100%;
+}
+
+.chips-line-first,
+.chips-line-second,
+.chips-line-third {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.chip-slider {
+  position: relative;
+  width: 100px;
+  height: 220px;
+  background-image: url("./images/chips/borger.svg");
+}
+
+.white-border {
+  background-image: url("./images/chips/border-light.svg");
+}
+
+.chip-slider .chip-image {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.down-moving {
+  animation-name: chips-down-moving;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.up-moving {
+  animation-name: chips-up-moving;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
 .blog {
   margin-top: 140px;
   margin-bottom: 230px;
@@ -457,9 +502,36 @@ h6 {
   fill: url(#gradient);
 }
 
-.chips-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 330px;
-  height: 100%;
+@keyframes chips-down-moving {
+  0% {
+    top: 0;
+    rotate: 0;
+  }
+
+  50% {
+    top: calc(100% - 100px);
+    rotate: 180deg;
+  }
+
+  100% {
+    top: 0;
+    rotate: 360deg;
+  }
+}
+
+@keyframes chips-up-moving {
+  0% {
+    bottom: 0;
+    rotate: 0;
+  }
+
+  50% {
+    bottom: calc(100% - 100px);
+    rotate: 360deg;
+  }
+
+  100% {
+    bottom: 0;
+    rotate: 0;
+  }
 }
