@@ -103,17 +103,6 @@ body {
   line-height: 1.5;
 }
 
-/* svg *[fill] {
-  fill: currentColor;
-}
-svg *[stroke] {
-  stroke: currentColor;
-}
-
-svg * {
-  transition-property: fill, stroke;
-} */
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -255,6 +244,7 @@ h6 {
   display: flex;
   justify-content: center;
   flex: 1;
+  max-height: 1024px;
   overflow: hidden;
 }
 
@@ -336,7 +326,19 @@ h6 {
 .chips-line-third {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
+}
+
+.chips-line-first {
+  margin-top: -40px;
+}
+
+.chips-line-second {
+  margin-top: 10px;
+}
+
+.chips-line-third {
+  margin-top: -50px;
 }
 
 .chip-slider {
