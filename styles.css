@@ -22,6 +22,17 @@
   font-display: swap;
 }
 
+/* Futura PT font is commercial
+   I found a similar font from free Google Fonts
+*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Styles normalization begin*/
 *,
 *::before,
@@ -123,6 +134,7 @@ svg * {
   --border-radius: 24px;
 
   --font-family-base: "Lexend", sans-serif;
+  --font-family-date: "Montserrat", sans-serif;
 
   --container-width: 1640px;
 
@@ -369,8 +381,9 @@ h6 {
 }
 
 .blog-post-date {
+  font-family: var(--font-family-date);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 60%;
 }
 
