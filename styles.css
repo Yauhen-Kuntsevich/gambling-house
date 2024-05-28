@@ -443,3 +443,10 @@ h6 {
 .social-media-icon:hover .main-fill {
   fill: url(#gradient);
 }
+
+.chips-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 330px;
+  height: 100%;
+}
