@@ -255,6 +255,7 @@ h6 {
   display: flex;
   justify-content: center;
   flex: 1;
+  overflow: hidden;
 }
 
 .left-light {
@@ -470,7 +471,7 @@ h6 {
   justify-content: space-between;
   align-items: flex-end;
   width: var(--container-width);
-  height: 100%;
+  height: auto;
 }
 
 .footer-navigation-menu {
@@ -502,12 +503,20 @@ h6 {
 .social-media p {
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
+  margin: 0 0 14px 0;
 }
 
 .social-media-list {
   display: flex;
+  justify-content: space-between;
   column-gap: 8px;
+  max-height: 32px;
+}
+
+.social-media-link {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .social-media-icon {
