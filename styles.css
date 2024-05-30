@@ -165,7 +165,7 @@ h6 {
   justify-content: space-around;
   align-items: center;
   column-gap: 20px;
-  width: 90%;
+  width: 100%;
   max-width: var(--container-width);
   min-width: 300px;
   height: 96px;
@@ -343,17 +343,26 @@ h6 {
 }
 
 .hero-banner-partner-button {
-  padding: 20px 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   border-radius: 48px;
 }
 
 .partner-button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: 24px;
   font-weight: 600;
   color: var(--color-light);
   line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 20px 72px;
 }
 
 .chips-container {
@@ -473,10 +482,6 @@ h6 {
   border-radius: 10px;
 }
 
-.blog-container::-webkit-scrollbar-thumb:hover {
-  background: var(--color-light-blue);
-}
-
 .blog-post-card {
   width: 100%;
   padding-block: 16px;
@@ -484,12 +489,6 @@ h6 {
   background-color: var(--color-dark-blue);
   border-radius: 196px;
   margin-bottom: 16px;
-}
-
-.blog-post-card:hover {
-  background-color: var(--color-blue);
-  transition-duration: var(--transition-duration);
-  cursor: pointer;
 }
 
 .blog-post-title {
@@ -579,10 +578,6 @@ h6 {
   fill: var(--color-blue);
 }
 
-.social-media-icon:hover .main-fill {
-  fill: url(#gradient);
-}
-
 @keyframes chips-down-moving {
   0% {
     top: 0;
@@ -614,6 +609,59 @@ h6 {
   100% {
     bottom: 0;
     rotate: 0;
+  }
+}
+
+@media (hover: hover), (hover: none) {
+  .header-menu-link:hover,
+  .header-menu-link:active {
+    color: var(--color-blue);
+  }
+
+  .language-button:hover,
+  .login-button:hover,
+  .language-button:active,
+  .login-button:active {
+    color: var(--color-light-blue);
+  }
+
+  .sign-up-button:hover,
+  .sign-up-button:active {
+    color: var(--color-dark-blue);
+    background-color: var(--color-light-blue);
+  }
+
+  .hero-banner-partner-button:hover,
+  .hero-banner-partner-button:active {
+    color: var(--color-dark-blue);
+    background-color: var(--color-light-blue);
+  }
+
+  .partner-button-text:hover,
+  .partner-button-text:active {
+    color: var(--color-dark-blue);
+  }
+
+  .blog-container::-webkit-scrollbar-thumb:hover,
+  .blog-container::-webkit-scrollbar-thumb:active {
+    background: var(--color-light-blue);
+  }
+
+  .blog-post-card:hover,
+  .blog-post-card:active {
+    background-color: var(--color-blue);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+  }
+
+  .footer-navigation-link:hover,
+  .footer-navigation-link:active {
+    color: var(--color-blue);
+  }
+
+  .social-media-icon:hover .main-fill,
+  .social-media-icon:active .main-fill {
+    fill: url(#gradient);
   }
 }
 
