@@ -350,6 +350,7 @@ h6 {
 
 .chips-container {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   max-width: 330px;
@@ -361,7 +362,7 @@ h6 {
 .chips-line-third {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 32px;
 }
 
 .chips-line-first {
@@ -435,6 +436,7 @@ h6 {
   background-color: rgba(255 255 255 / 12%);
   overflow: hidden;
   padding-right: 16px;
+  padding-left: 24px;
 }
 
 .blog-container {
@@ -443,8 +445,7 @@ h6 {
   max-height: 595px;
   min-width: 275px;
   overflow: auto;
-  padding-top: 24px;
-  padding-left: 24px;
+  padding-block: 24px;
   padding-right: 16px;
 }
 
@@ -494,6 +495,7 @@ h6 {
   font-family: var(--font-family-date);
   font-size: 14px;
   font-weight: 500;
+  line-height: 16px;
   opacity: 60%;
 }
 
@@ -777,6 +779,20 @@ h6 {
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 6px;
+  }
+
+  .blog-wrapper {
+    padding-right: 6px;
+    padding-left: 10px;
+  }
+
+  .blog-container {
+    padding-block: 10px;
+    padding-right: 6px;
+  }
+
+  .blog-container::-webkit-scrollbar {
+    width: 4px;
   }
 
   .social-media-link,
