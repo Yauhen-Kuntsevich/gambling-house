@@ -135,6 +135,11 @@ body {
   background-color: var(--color-dark);
 }
 
+a,
+button {
+  transition-duration: var(--transition-duration);
+}
+
 p,
 h1,
 h2,
@@ -192,6 +197,10 @@ h6 {
 }
 
 .header-menu-link {
+  display: inline-flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: var(--color-light);
   text-decoration: none;
