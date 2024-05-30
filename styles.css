@@ -163,7 +163,8 @@ h6 {
   justify-content: center;
   align-items: flex-end;
   min-height: 112px;
-  padding: 25px;
+  padding-top: 25px;
+  padding-inline: 25px;
 }
 
 .header-container {
@@ -485,12 +486,14 @@ h6 {
   animation-name: chips-down-moving;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .up-moving {
   animation-name: chips-up-moving;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .blog {
@@ -767,6 +770,10 @@ h6 {
     height: 500px;
   }
 
+  .chip-image {
+    rotate: -90deg;
+  }
+
   .blog {
     margin-top: 0;
   }
@@ -948,17 +955,14 @@ h6 {
   @keyframes chips-up-moving {
     0% {
       bottom: 0;
-      rotate: 0;
     }
 
     50% {
       bottom: calc(100% - 50px);
-      rotate: -90deg;
     }
 
     100% {
       bottom: 0;
-      rotate: 0;
     }
   }
 }
