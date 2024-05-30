@@ -4,6 +4,9 @@ const mobileBurgerButton = document.querySelector(".mobile-burger-button");
 const burgerLines = document.querySelectorAll(".burger-line");
 const mobileCrossIcon = document.querySelector(".mobile-cross-icon");
 
+const mainDiv = document.querySelector(".main");
+const footerDiv = document.querySelector(".footer");
+
 languageButton.addEventListener("click", () => {
   languageButton.innerHTML =
     languageButton.textContent === "EN"
@@ -17,10 +20,14 @@ mobileBurgerButton.addEventListener("click", () => {
       line.style.display = "inline";
     });
     mobileCrossIcon.style.display = "none";
+    mainDiv.style.display = "flex";
+    footerDiv.style.display = "flex";
   } else {
     burgerLines.forEach((line) => {
       line.style.display = "none";
     });
     mobileCrossIcon.style.display = "inline";
+    mainDiv.style.display = "none";
+    footerDiv.style.display = "none";
   }
 });
