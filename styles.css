@@ -644,7 +644,10 @@ h6 {
   }
 
   .chips-container {
+    display: flex;
+    align-items: center;
     rotate: 90deg;
+    height: 500px;
   }
 
   .blog {
@@ -693,9 +696,6 @@ h6 {
     min-height: auto;
   }
 
-  .main-container {
-  }
-
   .hero-banner {
     display: flex;
     flex-direction: column;
@@ -732,6 +732,7 @@ h6 {
 
   .chips-container {
     column-gap: 8px;
+    height: 230px;
   }
 
   .chips-line-first,
@@ -767,12 +768,21 @@ h6 {
 
   .blog-post-card {
     border-radius: 40px;
+    margin-bottom: 10px;
+    padding: 15px 35px;
   }
 
   .blog-post-title {
     font-size: 16px;
+    font-weight: 300;
     line-height: 20px;
     margin-bottom: 6px;
+  }
+
+  .social-media-link,
+  .social-media-icon {
+    width: 27px;
+    height: 27px;
   }
 
   @keyframes chips-down-moving {
