@@ -781,6 +781,23 @@ h6 {
   .footer {
     padding-inline: 30px;
   }
+
+  @keyframes chips-down-moving {
+    0% {
+      top: 0;
+      rotate: 0;
+    }
+
+    50% {
+      top: calc(100% - 100px);
+      rotate: 360deg;
+    }
+
+    100% {
+      top: 0;
+      rotate: 0;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
