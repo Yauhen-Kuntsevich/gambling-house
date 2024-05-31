@@ -268,7 +268,7 @@ h6 {
   display: none;
   width: 16px;
   height: 16px;
-  background-image: url("./images/cross-icon.svg");
+  background-image: url("../images/cross-icon.svg");
   background-size: contain;
 }
 
@@ -283,7 +283,7 @@ h6 {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-image: url("./images/language-icon.svg");
+  background-image: url("../images/language-icon.svg");
   background-size: cover;
   margin-right: 9px;
 }
@@ -468,12 +468,12 @@ h6 {
   position: relative;
   width: 100px;
   height: 220px;
-  background-image: url("./images/chips/borger.svg");
+  background-image: url("../images/chips/borger.svg");
   background-size: contain;
 }
 
 .white-border {
-  background-image: url("./images/chips/border-light.svg");
+  background-image: url("../images/chips/border-light.svg");
 }
 
 .chip-slider .chip-image {
