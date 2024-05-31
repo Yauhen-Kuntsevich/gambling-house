@@ -389,7 +389,6 @@ h6 {
 .hero-banner {
   margin-top: 296px;
   width: 670px;
-  z-index: 3;
 }
 
 .hero-banner-header {
@@ -432,6 +431,7 @@ h6 {
   width: 100%;
   height: 100%;
   padding: 20px 72px;
+  border-radius: inherit;
 }
 
 .partner-button-text {
@@ -461,6 +461,7 @@ h6 {
 
 .chips-line-first {
   margin-top: -40px;
+  margin-bottom: -30px;
 }
 
 .chips-line-second {
@@ -469,6 +470,7 @@ h6 {
 
 .chips-line-third {
   margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 .chip-slider {
@@ -501,6 +503,10 @@ h6 {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.additional-margin {
+  margin-bottom: 10px;
 }
 
 .blog {
@@ -714,12 +720,15 @@ h6 {
     background-color: var(--color-light-blue);
   }
 
-  .hero-banner-partner-button:hover {
-    color: var(--color-dark-blue);
+  .mobile-burger-button:hover .burger-line {
     background-color: var(--color-light-blue);
   }
 
   .partner-button-link:hover {
+    background-color: var(--color-light-blue);
+  }
+
+  .partner-button-link:hover .partner-button-text {
     color: var(--color-dark-blue);
   }
 
@@ -774,7 +783,7 @@ h6 {
     margin-bottom: 24px;
   }
 
-  .hero-banner-partner-button {
+  .hero-banner-partner-link {
     padding: 15px 55px;
   }
 
@@ -804,7 +813,7 @@ h6 {
     }
 
     50% {
-      top: calc(100% - 100px);
+      top: 120px;
       rotate: 360deg;
     }
 
@@ -877,6 +886,10 @@ h6 {
     line-height: 26px;
     text-align: center;
     margin-bottom: 24px;
+  }
+
+  .partner-button-link {
+    padding: 15px 55px;
   }
 
   .partner-button-text {
@@ -955,20 +968,6 @@ h6 {
     height: 27px;
   }
 
-  @keyframes chips-down-moving {
-    0% {
-      top: 0;
-    }
-
-    50% {
-      top: calc(100% - 50px);
-    }
-
-    100% {
-      top: 0;
-    }
-  }
-
   .footer {
     height: auto;
     align-items: flex-start;
@@ -984,17 +983,37 @@ h6 {
     align-items: flex-start;
   }
 
-  @keyframes chips-up-moving {
+  @keyframes chips-down-moving {
     0% {
-      bottom: 0;
+      top: 0;
+      rotate: 0;
     }
 
     50% {
-      bottom: calc(100% - 50px);
+      top: 60px;
+      rotate: -180deg;
+    }
+
+    100% {
+      top: 0;
+      rotate: 0;
+    }
+  }
+
+  @keyframes chips-up-moving {
+    0% {
+      bottom: 0;
+      rotate: 0;
+    }
+
+    50% {
+      bottom: 60px;
+      rotate: -180deg;
     }
 
     100% {
       bottom: 0;
+      rotate: 0;
     }
   }
 }
