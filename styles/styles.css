@@ -155,6 +155,7 @@ h6 {
 }
 
 .page-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -169,6 +170,7 @@ h6 {
   min-height: 112px;
   padding-top: 25px;
   padding-inline: 25px;
+  z-index: 3;
 }
 
 .header-container {
@@ -305,6 +307,7 @@ h6 {
   padding-top: 30px;
   padding-inline: 10px;
   margin-bottom: 92px;
+  z-index: 3;
 }
 
 .mobile-header-menu-list {
@@ -357,33 +360,29 @@ h6 {
 }
 
 .main {
+  position: relative;
   display: flex;
   justify-content: center;
   flex: 1;
   min-height: 1024px;
   overflow: hidden;
+  z-index: 3;
 }
 
-.left-light {
-  height: 100%;
+.left-light-gradient {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2;
 }
 
-.right-light {
-  position: absolute;
-  right: -350px;
-  bottom: -300px;
-  z-index: -1;
-}
-
 .main-container {
-  position: relative;
   display: flex;
   justify-content: space-between;
   width: var(--container-width);
+  z-index: 3;
 }
 
 .hero-banner {
@@ -512,7 +511,7 @@ h6 {
 .blog {
   margin-top: 140px;
   margin-bottom: 230px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .blog-header {
@@ -606,6 +605,7 @@ h6 {
   padding-top: 40px;
   padding-bottom: 24px;
   padding-inline: 140px;
+  z-index: 2;
 }
 
 .footer-navigation-menu {
@@ -661,6 +661,15 @@ h6 {
 
 .social-media-icon .main-fill {
   fill: var(--color-blue);
+}
+
+.right-light-gradient {
+  position: absolute;
+  right: -400px;
+  bottom: -300px;
+  width: 1000px;
+  height: 1000px;
+  z-index: 1;
 }
 
 .hidden {
