@@ -650,6 +650,14 @@ h6 {
   fill: var(--color-blue);
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
+
 @keyframes chips-down-moving {
   0% {
     top: 0;
