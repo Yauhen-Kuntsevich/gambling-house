@@ -4,6 +4,7 @@ const manageToggleMenu = () => {
   const mobileHeaderMenu = document.querySelector('.mobile-header-menu');
   const mainDiv = document.querySelector('.main');
   const footerDiv = document.querySelector('.footer');
+  const rightLightGradient = document.querySelector('.right-light-gradient');
 
   const isMenuActive = mobileHeaderMenu.classList.toggle('menu-active');
 
@@ -14,6 +15,8 @@ const manageToggleMenu = () => {
 
   mainDiv.classList.toggle('hidden', isMenuActive);
   footerDiv.classList.toggle('hidden', isMenuActive);
+
+  rightLightGradient.classList.toggle('hidden', isMenuActive);
 };
 
 export default manageToggleMenu;
