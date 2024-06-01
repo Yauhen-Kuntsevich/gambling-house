@@ -170,7 +170,6 @@ h6 {
   min-height: 112px;
   padding-top: 25px;
   padding-inline: 25px;
-  z-index: 3;
 }
 
 .header-container {
@@ -371,10 +370,10 @@ h6 {
 
 .left-light-gradient {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -100px;
+  left: -200px;
+  max-width: 1180px;
+  max-height: 945px;
   z-index: 2;
   pointer-events: none;
 }
@@ -443,12 +442,30 @@ h6 {
 }
 
 .chips-container {
+  position: relative;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   max-width: 330px;
   height: 100%;
+  z-index: inherit;
+}
+
+.chips-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--color-dark) 0,
+    rgba(17 10 29 / 30%) 50%,
+    var(--color-dark) 100%
+  );
+  z-index: 2;
 }
 
 .chips-line-first,
@@ -669,6 +686,7 @@ h6 {
   width: 1000px;
   height: 1000px;
   z-index: 4;
+  filter: blur(100px);
   pointer-events: none;
 }
 
@@ -800,7 +818,12 @@ h6 {
     display: flex;
     align-items: center;
     rotate: 90deg;
-    height: 500px;
+    height: auto;
+  }
+
+  .chips-container::after {
+    height: 100%;
+    width: 105%;
   }
 
   .chip-image {
@@ -907,7 +930,7 @@ h6 {
 
   .chips-container {
     column-gap: 8px;
-    height: 230px;
+    height: auto;
   }
 
   .chips-line-first,
