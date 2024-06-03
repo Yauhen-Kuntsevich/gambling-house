@@ -763,7 +763,7 @@ h6 {
   }
 
   .social-media-icon:hover .main-fill {
-    fill: url(#gradient);
+    fill: url(#general-gradient);
   }
 }
 
