@@ -767,6 +767,53 @@ h6 {
   }
 }
 
+/* "Hover" effect for tap devices */
+@media (hover: none) {
+  .header-menu-link:active {
+    color: var(--color-blue);
+  }
+
+  .language-button:active,
+  .login-button:active {
+    color: var(--color-light-blue);
+  }
+
+  .sign-up-button:active {
+    color: var(--color-dark-blue);
+    background-color: var(--color-light-blue);
+  }
+
+  .mobile-burger-button:active .burger-line {
+    background-color: var(--color-light-blue);
+  }
+
+  .hero-banner-partner-button:active {
+    background-color: var(--color-light-blue);
+  }
+
+  .hero-banner-partner-button:active .partner-button-text {
+    color: var(--color-dark-blue);
+  }
+
+  .blog-container::-webkit-scrollbar-thumb:active {
+    background: var(--color-light-blue);
+  }
+
+  .blog-post-card:active {
+    background-color: var(--color-blue);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+  }
+
+  .footer-navigation-link:active {
+    color: var(--color-blue);
+  }
+
+  .social-media-icon:active .main-fill {
+    fill: url(#general-gradient);
+  }
+}
+
 @media (max-width: 1690px) {
   .header-menu-list {
     column-gap: 16px;
