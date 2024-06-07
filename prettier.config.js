@@ -1,19 +1,19 @@
-module.exports = {
+export default {
   overrides: [
     {
-      files: '*.html',
+      files: "*.html",
       options: {
         singleQuote: false,
       },
     },
     {
-      files: '*.css',
+      files: "*.css",
       options: {
         singleQuote: false,
       },
     },
     {
-      files: '*.mjs',
+      files: "*.js",
       options: {
         singleQuote: true,
       },
