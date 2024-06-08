@@ -408,10 +408,10 @@ h6 {
 }
 
 .hero-banner-head {
-  font-size: 96px;
+  font-size: clamp(46px, 5vw, 96px);
   font-weight: 500;
   text-transform: uppercase;
-  line-height: 96px;
+  line-height: 1;
 }
 
 .blue-text {
@@ -419,11 +419,11 @@ h6 {
 }
 
 .hero-banner-subheader {
-  font-size: 32px;
+  font-size: clamp(20px, 1.67vw, 32px);
   font-weight: 500;
   color: var(--color-light);
   opacity: 60%;
-  line-height: 32px;
+  line-height: 1;
   margin-bottom: 48px;
 }
 
@@ -436,10 +436,10 @@ h6 {
 }
 
 .partner-button-text {
-  font-size: 24px;
+  font-size: clamp(18px, 1.25vw, 24px);
   font-weight: 600;
   color: var(--color-light);
-  line-height: 32px;
+  line-height: 1.33;
   text-transform: uppercase;
 }
 
@@ -539,11 +539,11 @@ h6 {
 }
 
 .blog-head {
-  font-size: 40px;
+  font-size: clamp(32px, 2.08vw, 40px);
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  line-height: 40px;
+  line-height: 1;
 }
 
 .blog-wrapper {
@@ -596,7 +596,7 @@ h6 {
 }
 
 .blog-post-title {
-  font-size: 24px;
+  font-size: clamp(16px, 1.25vw, 24px);
   font-weight: 300;
   line-height: 28px;
   margin-bottom: 16px;
@@ -956,20 +956,15 @@ h6 {
   }
 
   .hero-banner-head {
-    font-size: 46px;
-    line-height: 50px;
     text-align: center;
   }
 
   .hero-banner-subheader {
     font-size: 20px;
     line-height: 26px;
-    text-align: center;
-    margin-bottom: 24px;
   }
 
   .partner-button-text {
-    font-size: 18px;
     line-height: 26px;
   }
 
@@ -1006,10 +1001,6 @@ h6 {
     border-radius: 50px;
   }
 
-  .blog-head {
-    font-size: 32px;
-  }
-
   .blog-post-card {
     border-radius: 40px;
     margin-bottom: 10px;
@@ -1017,7 +1008,6 @@ h6 {
   }
 
   .blog-post-title {
-    font-size: 16px;
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 6px;
