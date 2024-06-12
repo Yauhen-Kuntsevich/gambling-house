@@ -602,6 +602,11 @@ h6 {
   margin-bottom: 16px;
 }
 
+.blog-post-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .blog-post-date {
   font-family: var(--font-family-date);
   font-size: 14px;
